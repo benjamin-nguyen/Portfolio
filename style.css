@@ -1,11 +1,16 @@
 /* Global Properties */
+
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
+
 body {
   background: #F3EAD9;
   font-family: 'Work Sans', sans-serif;
 }
+
 img {
   display: flex;
   max-width: 100%;
@@ -45,7 +50,6 @@ img {
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(105,105,105)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-
 
 .wave {
   animation-name: wave-animation; 
@@ -107,6 +111,7 @@ img {
 .about {
   background: #AC9987;
   border-radius: 0.5rem;
+  
 }
 .card {
   border-bottom: 8px solid #f5ba09;
@@ -116,12 +121,12 @@ img {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  margin: 5px;
   box-shadow: -20px -20px 0px 0px #AC9987;
   border-radius: 10px;
   animation-name: shadow-show;
   animation-duration: 1.5s;
   transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  margin: 0 auto;
   /* custom */
 }
 @keyframes shadow-show {
