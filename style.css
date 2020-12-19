@@ -46,6 +46,26 @@ img {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(105,105,105)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
+
+.wave {
+  animation-name: wave-animation; 
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* pause */
+  100% { transform: rotate( 0.0deg) }
+}
+
 /* HomePage Height */
 .main-container {
   height: 100vh;
@@ -65,11 +85,11 @@ img {
 }
 
 /* HomePage Image Change */
-.main-row img:hover {
+.main-row img {
   display: flex;
   max-width: 100%;
   max-height:100%;
-  animation: MoveUpDown 1s linear infinite;
+  animation: MoveUpDown 1.5s linear infinite;
   left: 0;
   bottom: 0;
   position:relative;
