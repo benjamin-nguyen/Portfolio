@@ -1,0 +1,155 @@
+/* Global Properties */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: #F3EAD9;
+  font-family: 'Work Sans', sans-serif;
+}
+img {
+  display: flex;
+  max-width: 100%;
+  max-height:100%;
+  left: 0;
+  bottom: 0;
+  position:relative;
+  border-radius: 0.5rem;
+}
+
+/* Main Heading Font */
+.main-heading {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+.nav-link {
+  border: 2px solid transparent;
+}
+.nav-link:hover {
+  text-decoration: none;
+  border-bottom: 2px solid #f5ba09;
+  transition: 0.5s ease;
+}
+.bg-dark {
+  background:transparent !important;
+  transition:0.75s ease;
+}
+.bg-dark.scrolled {
+  background: white !important;
+  opacity: 75%;
+}
+.custom-toggler.navbar-toggler {
+  border-color:	rgb(105,105,105);
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(105,105,105)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* HomePage Height */
+.main-container {
+  height: 100vh;
+}
+
+/* HomePage Align Items */
+.main-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* HomePage Font Size Change */
+.main-row h1 {
+  font-size: 5rem;
+}
+
+/* HomePage Image Change */
+.main-row img:hover {
+  display: flex;
+  max-width: 100%;
+  max-height:100%;
+  animation: MoveUpDown 1s linear infinite;
+  left: 0;
+  bottom: 0;
+  position:relative;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
+
+/* About Section */
+.about {
+  background: #AC9987;
+  border-radius: 0.5rem;
+}
+.card {
+  border-bottom: 8px solid #f5ba09;
+  background-color: white;
+  width: 250px;
+  min-height: 404.5px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 5px;
+  box-shadow: -20px -20px 0px 0px #AC9987;
+  border-radius: 10px;
+  animation-name: shadow-show;
+  animation-duration: 1.5s;
+  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1);
+  /* custom */
+}
+@keyframes shadow-show {
+  from {
+    box-shadow: 0px 0px 0px 0px #e0e0e0;
+  }
+  to {
+    box-shadow: -20px -20px 0px 0px #AC9987;
+  }
+}
+
+/* Social Media Section */
+#contact {
+  background: #AC9987;
+}
+
+/* Add color to Social Media Links */
+section #socials li {
+  width: 120px;
+  height: 140px;
+  display: inline-block;
+  margin: 20px;
+  list-style: none;
+}
+section #socials li div {
+  width: 120px;
+  height: 120px;
+  font-size: 3.4em;
+  text-align: center;
+  line-height: 120px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+section #socials li a {
+  color: #f5ba09;
+}
+section #socials li div:hover {
+  transform: rotate(360deg);
+  border-radius: 100px;
+}
+section #socials li span {
+  width: 120px;
+  height: 20px;
+  display: block;
+  padding: 15px 0px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+}
