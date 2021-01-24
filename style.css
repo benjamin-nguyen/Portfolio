@@ -9,10 +9,23 @@ html {
 }
 
 body {
-  background: #F3EAD9;
+  background: linear-gradient(-45deg, #F3EAD9, #dad2c3);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   font-family: 'Work Sans', sans-serif;
   overflow-x: hidden;
   overflow-y:hidden;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 img {
@@ -25,10 +38,43 @@ img {
   border-radius: 0.5rem;
 }
 
-/* Main Heading Font */
-.main-heading {
+/* Buttons */
+button {
+  outline: none;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  overflow: hidden;
+  outline:none;
+}
+button:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  transition: all 0.4s ease 0s;
+}
+button:focus {
+  outline: none;
+}
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+  background-color: #62687d !important;
+}
+
+/* Text */
+.name-heading {
+  color: #FFC107;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+}
+.main-heading {
+  color: #62687d;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+.heading {
+  color: #62687d;
+}
+.text-highlight {
+  color: #62687D;
 }
 
 /* Navigation */
@@ -37,8 +83,11 @@ img {
 }
 .nav-link:hover {
   text-decoration: none;
-  border-bottom: 2px solid #f5ba09;
+  border-bottom: 2px solid #62687d;
   transition: 0.5s ease;
+}
+.nav-icon {
+  color: #FFC107
 }
 .bg-dark {
   background:transparent !important;
@@ -90,7 +139,6 @@ img {
 /* .main-row h1 {
   font-size: 4vw;
 }
-
 .main-row h2 {
   font-size: 5.5vw;
 } */
@@ -116,11 +164,11 @@ img {
 
 /* About Section */
 .about {
-  background: #AC9987;
+  background: #ac9987;
   border-radius: 0.5rem;
 }
 .card {
-  border-bottom: 8px solid #f5ba09;
+  border-bottom: 8px solid #62687d;
   background-color: white;
   width: 250px;
   min-height: 404.5px;
@@ -129,20 +177,8 @@ img {
   padding: 20px;
   box-shadow: 10px 10px #AC9987;
   border-radius: 10px;
-  /* animation-name: shadow-show;
-  animation-duration: 1.5s;
-  transition-timing-function: cubic-bezier(0.795, 0, 0.165, 1); */
   margin: 0 auto;
-  /* custom */
 }
-/* @keyframes shadow-show {
-  from {
-    box-shadow: 0px 0px 0px 0px #e0e0e0;
-  }
-  to {
-    box-shadow: -20px -20px 0px 0px #AC9987;
-  }
-} */
 
 /* Social Media Section */
 #contact {
@@ -168,7 +204,7 @@ section #socials li div {
   transition: all 0.5s ease;
 }
 section #socials li a {
-  color: #f5ba09;
+  color: #62687d;
 }
 section #socials li div:hover {
   transform: rotate(360deg);

@@ -27,13 +27,14 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
 
-    <title>Benjamin Nguyen | Portfolio</title>    
+    <title>Benjamin Nguyen | Portfolio</title>
+    <link rel="shortcut icon" type="image/png" href="images/icon.png">
   </head>
 
   <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top pt-2">
-      <i class="fas fa-folder-open fa-2x text-warning pb-1"></i>
+      <i class="nav-icon fas fa-laptop-code fa-2x pb-1"></i>
       <a href="#home" class="navbar-brand"><h5 class="d-inline pl-3 text-dark font-weight-bold">Portfolio</h5></a>
 
       <button class="navbar-toggler custom-toggler" data-toggle="collapse" data-target="#navbarMenu">
@@ -60,8 +61,9 @@
       <div class="main-row">
         <div class="col-12 col-md-6 pl-5 pt-5 pb-5">
           <h2 class="text-dark" data-aos="fade-right"><span class="wave">👋</span> Hi there! I'm</h2>
-          <h1 class="text-warning main-heading" data-aos="fade-in">Benjamin Nguyen</h1>
+          <h1 class="name-heading" data-aos="fade-in">Benjamin Nguyen</h1>
           <h2 class="text-dark" data-aos="fade-up-left"><i>Software Developer</i></h2>
+          
         </div>
         <div class="col-12 col-md-6 pl-5 pt-5 pb-5">
           <img src="./images/me.png" class="img-fluid" alt="Project Image" data-aos="fade-in"/>
@@ -76,43 +78,45 @@
           <img src="./images/TempProfile.jpg" class="img-fluid" alt="Project Image" data-aos="zoom-out-up"/>
         </div>
         <div class="col-12 col-md-6 pl-5 pt-5 pb-5 text-white">
-          <h3 class="text-warning" data-aos="fade-in"><b>About Me</b></h3>
-          <h1 class="main-heading" data-aos="fade-in">Who am I?</h1>
+          <h3 class="heading" data-aos="fade-in"><b>About Me</b></h3>
+          <h1 class="main-heading text-dark" data-aos="fade-in">Who am I?</h1>
           <p data-aos="fade-left">
-            I'm <b class="text-warning">Benjamin Nguyen</b>, a second year Computer Science Co-op student at Ryerson University located in Toronto, ON. 
+            I'm <b class="text-highlight">Benjamin Nguyen</b>, a second year Computer Science Co-op student at Ryerson University located in Toronto, ON. 
           </p>
           <p data-aos="fade-left">
             I develop projects that are functional and visually appealing. I also enjoy going to hackathons and technical workshops to develop new skills.
           </p>
           <p data-aos="fade-left">
-            My go-to languages are <b class="text-warning">Python</b> and <b class="text-warning">Java</b>. I am currently learning C and C#.
+            My go-to languages are <b class="text-highlight">Python</b> and <b class="text-highlight">Java</b>. I am currently learning C and C#.
           </p>
-          <a href="resume.pdf" target="_blank"><button class="btn btn-outline-warning" data-aos="zoom-in-up">Résumé</button></a>
+          <a href="resume.pdf" target="_blank"><button class="btn btn-secondary" data-aos="zoom-in-up">Résumé</button></a>
         </div>
       </div>
     </div>
   
     <!-- Projects Section -->
     <div id="projects" class="container container-fluid mt-5 pt-5 ">
-      <h1 class="text-warning mb-3 pb-3 text-center main-heading"><b>Projects</b></h1>
+      <h1 class="mb-3 pb-3 text-center name-heading"><b>Projects</b></h1>
       <div class="row">
         <div class="col-lg-4 col-12 mb-5">
           <div class="card" style="width: 20rem;" data-aos="zoom-out-up">
-            <a href="">
-              <img src="" class="card-img-top" style="height: 15rem;" alt="Project Image" data-aos="zoom-out-up"/>
+            <!-- <a href=""> -->
+              <img src="https://miro.medium.com/max/308/0*DZ3aN4vIMpupT1r5.png" class="card-img-top" style="height: 15rem;" alt="Project Image" data-aos="zoom-out-up"/>
             </a>
             <div class="card-body">
               <h5 class="card-title" data-aos="fade-left">Sorting Algorithms Visualizer</h5>
               <p class="card-text" data-aos="fade-left">
-                A visualizer which visualizes different sorting techniques using HTML, CSS, JavaScript, React, and Node.
+                A React.js web application which provides visualization
+                of different algorithmic sorting techniques.
+
               </p>
-              <a href="https://github.com/benjamin-nguyen/SortingAlgorithmsVisualizer" target="_blank" class="btn btn-warning" data-aos="fade-left">GitHub</a>
+              <a href="https://github.com/benjamin-nguyen/SortingAlgorithmsVisualizer" target="_blank" class="btn btn-secondary" data-aos="fade-left">GitHub</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-12 mb-5">
           <div class="card" style="width: 20rem;" data-aos="zoom-out-up">
-            <a href="">
+            <!-- <a href=""> -->
               <img src="https://i.pinimg.com/originals/1b/ee/93/1bee93182c88b6a37435e29e123a59e3.png" target="_blank" class="card-img-top" style="height: 15rem;" alt="Project Image" data-aos="zoom-out-up"/>
             </a>
             <div class="card-body">
@@ -120,7 +124,7 @@
               <p class="card-text" data-aos="fade-left">
                 A standard/scientific calculator GUI application using Python and Ktinker.
               </p>
-              <a href="https://github.com/benjamin-nguyen/Calculator" target="_blank" class="btn btn-warning" data-aos="fade-left" >GitHub</a><br><br><br>
+              <a href="https://github.com/benjamin-nguyen/Calculator" target="_blank" class="btn btn-secondary" data-aos="fade-left" >GitHub</a><br><br><br>
             </div>
           </div>
         </div>
@@ -130,10 +134,11 @@
     <!-- Contact Section -->
     <div id="contact" class="container-fluid ">
       <div class="container text-dark py-5">
-        <h4 class="text-warning" data-aos="fade-right"><b>Contact</b></h4>
-        <h1 class="main-heading" data-aos="fade-left">Keep in touch!</h1>
-        <div class="row pt-3">
-          <section>
+        <h4 class="heading" data-aos="fade-right"><b>Contact</b></h4>
+        <h2 class="main-heading text-dark" data-aos="fade-left">Keep in touch!</h1>
+        <p class="main-heading" data-aos="fade-left">You can contact me by emailing <a class="text-white" href="mailto:bcjnguyen@gmail.com" target="_blank">bcjnguyen@gmail.com</a> or by filling out the <button onclick="myFunction()" class="text-white">FORM</button> below.</p>
+        <center>
+        <section>
           <ul id="socials">
             <li>
               <div class="linkedin">
@@ -159,26 +164,42 @@
               </div>
               <span data-aos="slide-up">Email</span>
             </li>
-          </ul>
+          </ul> 
+        </section>
+        <div id="form">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSct_-VpU2XxXMNGC_EG3wY3cuxLMcIJARQIj9kPUArSkHDMsg/viewform?embedded=true" width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </center>
         </div>
-      </section>
       </div>
     </div>
-
+  
     <!-- Footer -->
     <footer>
       <div class="container text-center mt-5">
         <h5>
-          Copyright &copy; 2020 | <a class="text-warning text-decoration-none pb-5" href="#home">Benjamin Nguyen</a>
+          Copyright &copy; 2020 | <a class="name-heading text-dark text-decoration-none pb-5" href="#home">Benjamin Nguyen</a>
         </h5>
       </div>
     </footer>
 
+    <!-- Scroll Animation Script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
         duration: 1000,
       });
+    </script>
+
+    <!-- Reveal Form Script -->
+    <script>
+      function myFunction() {
+      var x = document.getElementById("form");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
     </script>
   </body>
 </html>
