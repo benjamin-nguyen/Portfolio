@@ -9,23 +9,11 @@ html {
 }
 
 body {
-  background: linear-gradient(-45deg, #F3EAD9, #dad2c3);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  background: #F3EAD9;
+
   font-family: 'Work Sans', sans-serif;
   overflow-x: hidden;
   overflow-y:hidden;
-}
-@keyframes gradient {
-  0% {
-      background-position: 0% 50%;
-  }
-  50% {
-      background-position: 100% 50%;
-  }
-  100% {
-      background-position: 0% 50%;
-  }
 }
 
 img {
@@ -61,20 +49,20 @@ button:focus {
 
 /* Text */
 .name-heading {
-  color: #FFC107;
+  color: #62687d;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
 .main-heading {
-  color: #62687d;
+  color: #FFC107;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
 .heading {
-  color: #62687d;
+  color: #FFC107;
 }
 .text-highlight {
-  color: #62687D;
+  color: #FFC107;
 }
 
 /* Navigation */
@@ -168,7 +156,7 @@ button:focus {
   border-radius: 0.5rem;
 }
 .card {
-  border-bottom: 8px solid #62687d;
+  border-bottom: 8px solid #FFC107;
   background-color: white;
   width: 250px;
   min-height: 404.5px;
