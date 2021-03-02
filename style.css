@@ -9,8 +9,7 @@ html {
 }
 
 body {
-  background: #F3EAD9;
-
+  background: #283655;
   font-family: 'Work Sans', sans-serif;
   overflow-x: hidden;
   overflow-y:hidden;
@@ -26,43 +25,27 @@ img {
   border-radius: 0.5rem;
 }
 
-/* Buttons */
-button {
-  outline: none;
-  background-color: Transparent;
-  background-repeat:no-repeat;
-  border: none;
-  cursor:pointer;
-  overflow: hidden;
-  outline:none;
-}
-button:hover {
-  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
-  transition: all 0.4s ease 0s;
-}
-button:focus {
-  outline: none;
-}
-.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
-  background-color: #62687d !important;
-}
-
 /* Text */
 .name-heading {
-  color: #62687d;
+  color: #D0E1F9;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
 .main-heading {
-  color: #FFC107;
+  color: #D0E1F9;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
 }
 .heading {
-  color: #FFC107;
+  color: #D0E1F9;
 }
 .text-highlight {
-  color: #FFC107;
+  color: #283655;
+  font-weight: bold;
+}
+.home-text {
+  color: white;
+  font-weight: bold;
 }
 
 /* Navigation */
@@ -71,18 +54,18 @@ button:focus {
 }
 .nav-link:hover {
   text-decoration: none;
-  border-bottom: 2px solid #62687d;
+  border-bottom: 2px solid #D0E1F9;
   transition: 0.5s ease;
 }
 .nav-icon {
-  color: #FFC107
+  color: #D0E1F9
 }
 .bg-dark {
   background:transparent !important;
   transition:0.75s ease;
 }
 .bg-dark.scrolled {
-  background: white !important;
+  background: black !important;
   opacity: 75%;
 }
 .custom-toggler.navbar-toggler {
@@ -90,25 +73,6 @@ button:focus {
 }
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(105,105,105)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-/* Wave Emoji */
-.wave {
-  animation-name: wave-animation; 
-  animation-duration: 2.5s;        /* Change to speed up or slow down */
-  animation-iteration-count: infinite;  /* Never stop waving */
-  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
-  display: inline-block;
-}
-@keyframes wave-animation {
-    0% { transform: rotate( 0.0deg) }
-   10% { transform: rotate(14.0deg) }  
-   20% { transform: rotate(-8.0deg) }
-   30% { transform: rotate(14.0deg) }
-   40% { transform: rotate(-4.0deg) }
-   50% { transform: rotate(10.0deg) }
-   60% { transform: rotate( 0.0deg) }  /* pause */
-  100% { transform: rotate( 0.0deg) }
 }
 
 /* HomePage Height */
@@ -131,7 +95,7 @@ button:focus {
   font-size: 5.5vw;
 } */
 
-/* HomePage Image Change */
+/* HomePage Image */
 .main-row img {
   display: flex;
   max-width: 100%;
@@ -140,6 +104,7 @@ button:focus {
   left: 0;
   bottom: 0;
   position:relative;
+  filter: drop-shadow( 0px 0px 30px #fff);
 }
 @keyframes MoveUpDown {
   0%, 100% {
@@ -152,59 +117,155 @@ button:focus {
 
 /* About Section */
 .about {
-  background: #ac9987;
+  background: #4D648D;
   border-radius: 0.5rem;
 }
-.card {
-  border-bottom: 8px solid #FFC107;
-  background-color: white;
-  width: 250px;
-  min-height: 404.5px;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  box-shadow: 10px 10px #AC9987;
-  border-radius: 10px;
-  margin: 0 auto;
-}
 
-/* Social Media Section */
-#contact {
-  background: #AC9987;
-}
-
-/* Add color to Social Media Links */
-section #socials li {
-  width: 120px;
-  height: 140px;
+#socials li {
   display: inline-block;
-  margin: 20px;
+  margin: 10px;
   list-style: none;
 }
-section #socials li div {
-  width: 120px;
-  height: 120px;
-  font-size: 3.4em;
+ #socials li div {
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
   text-align: center;
-  line-height: 120px;
   background-color: #fff;
   border-radius: 0.5rem;
   transition: all 0.5s ease;
 }
-section #socials li a {
+#socials li a {
   color: #62687d;
 }
-section #socials li div:hover {
+#socials li div:hover {
   transform: rotate(360deg);
   border-radius: 100px;
 }
-section #socials li span {
-  width: 120px;
-  height: 20px;
-  display: block;
-  padding: 15px 0px;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.2em;
-  text-align: center;
+
+/* Projects */
+.card {
+  border-bottom: 8px solid #4D648D;
+  min-height: 404.5px;
+  display: flex;
+  flex-direction: column;
+  
+  max-width: 300px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	position: relative;
+	margin: 10px auto;
+  cursor: pointer;
+}
+
+.card img {
+	transition: all 0.25s linear;
+}
+.card:hover img {
+	transform: rotate(5deg) scale(1.1, 1.1);
+	filter: brightness(110%);
+}
+.card .card-body {
+	position: relative;
+	padding: 30px;
+	background-color: #fff;
+}
+.card .card-body::before {
+	content: "";
+	position: absolute;
+	height: 20px;
+	top: -10px;
+	left: 0px;
+	right: 0px;
+	background-color: #fff;
+	z-index: 0;
+	transform: skewY(3deg);
+}
+.card .card-title {
+  background: rgba(208, 225, 249, 0.80);
+  padding: 2.5%;
+  border-radius: 0.5rem;
+	font-weight: bold;
+	position: absolute;
+  top: -75px;
+	color: black;
+	font-size: 17px;
+}
+
+/* Contact */
+#contact {
+  background: #4D648D;
+}
+
+/* Paper */
+.fold {
+  position: relative;
+  height: 400px;
+  padding: 25px;
+  background: white;
+}
+/* Fold (Pseudo class) */
+.fold:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-style: solid;
+  border-width: 0 100px 100px 0;
+  border-color: #ddd #4D648D;
+  transition: all ease .5s
+}
+/* Paper Fold Animation */
+.fold:hover:before {
+  border-width: 0 150px 150px 0;
+  border-color: #ddd #4D648D;
+
+}
+
+/* Contact Form */
+.full-screen {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.50);
+}
+.flex-container-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Close Form Button */
+.close {
+  position: absolute;
+  top: 5%;
+  width: 60px;
+  height: 60px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: white;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
 }
