@@ -23,6 +23,7 @@ img {
   left: 0;
   bottom: 0;
   border-radius: 0.5rem;
+  
 }
 
 /* Text */
@@ -52,6 +53,7 @@ img {
 .nav-link {
   border: 2px solid transparent;
 }
+
 .nav-link:hover {
   text-decoration: none;
   border-bottom: 2px solid #D0E1F9;
@@ -62,9 +64,18 @@ img {
 }
 
 .bg-dark {
-  background:transparent !important;
-  transition:0.75s ease;
+  background: transparent !important;
+  transition: 0.75s ease;
 }
+
+@media only screen and (max-device-width : 1024px) {
+  /* Styles */
+  .bg-dark {
+    background: black !important;
+    opacity: 85%;
+  }
+}
+
 .bg-dark.scrolled {
   background: black !important;
   opacity: 75%;
@@ -145,7 +156,6 @@ img {
 }
 
 /* Projects */
-
 
 .card {
   border-bottom: 8px solid #4D648D;
