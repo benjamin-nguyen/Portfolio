@@ -23,7 +23,6 @@ img {
   left: 0;
   bottom: 0;
   border-radius: 0.5rem;
-  
 }
 
 /* Text */
@@ -209,6 +208,7 @@ img {
   height: 400px;
   padding: 25px;
   background: white;
+  cursor: pointer;
 }
 /* Fold (Pseudo class) */
 .fold:before {
@@ -225,7 +225,6 @@ img {
 .fold:hover:before {
   border-width: 0 150px 150px 0;
   border-color: #ddd #4D648D;
-
 }
 
 /* Contact Form */
@@ -238,6 +237,7 @@ img {
   bottom: 0;
   background: rgba(0, 0, 0, 0.50);
 }
+
 .flex-container-center {
   display: flex;
   flex-direction: column;
