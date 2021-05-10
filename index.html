@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta property="og:image" content="./images/preview.png" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
@@ -36,8 +37,8 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top pt-2">
 
-      <i class="nav-icon fas fa-laptop-code fa-2x pb-1"></i>
-      <a href="#home" class="navbar-brand "><h5 class=" main-heading d-inline pl-3 font-weight-bold" style="color: #D0E1F9;">PORTFOLIO</h5></a>
+      <i class="nav-icon fas fa-code-branch fa-3x pb-1"></i>
+      <a href="#home" class="navbar-brand "><h5 class=" main-heading d-inline pl-3 font-weight-bold" style="color: #D0E1F9;">BENJAMINN</h5></a>
 
       <button class="navbar-toggler custom-toggler " data-toggle="collapse" data-target="#navbarMenu">
         <span class="navbar-toggler-icon"></span>
@@ -55,9 +56,9 @@
           <li class="nav-item">
               <a href="#contact" class="nav-link text-white text-center font-weight-bold">Contact</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a href="/documents/resume.pdf" class="nav-link text-italics text-center font-weight-bold" target="_blank" style="color: #D0E1F9;" >Resume</a>
-          </li>
+          </li> -->
         </ul>
 
         <ul class="navbar-nav justify-content-center ml-auto">
@@ -98,15 +99,15 @@
           <img src="./images/temp_profile.jpg" class="img-fluid" alt="Image" data-aos="zoom-out-up"/>
         </div>
         <div class="col-12 col-lg-6 pl-5 pt-5 pb-5 text-white">
-          <h3 class="heading" data-aos="fade-in"><b>About Me</b></h3>
-          <h1 class="main-heading text-dark" data-aos="fade-in">Who am I?</h1>
-          <p style="font-size: 115%" data-aos="fade-left">
+          <h3 class="heading" data-aos="fade-left"><b>About Me</b></h3>
+          <h1 class="main-heading text-dark" data-aos="fade-left">Who am I?</h1>
+          <p style="font-size: 115%" data-aos="fade-in">
             I'm <b class="text-highlight">Benjamin Nguyen</b>, a second year Computer Science Co-op student at Ryerson University located in Toronto, ON. 
           </p>
-          <p style="font-size: 110%" data-aos="fade-left">
-            I develop projects that are functional and visually appealing. I also enjoy going to hackathons and technical workshops to develop new skills.
+          <p style="font-size: 110%" data-aos="fade-in">
+            I develop projects that are functional and visually appealing. I also enjoy going to hackathons and technical workshops to learn new skills.
           </p>
-          <p style="font-size: 110%" data-aos="fade-left">
+          <p style="font-size: 110%" data-aos="fade-in">
             My go-to languages are <b class="text-highlight">Python</b> and <b class="text-highlight">Java</b>. I am currently learning C++ and C#.
           </p>
           <!-- <ul id="socials">
@@ -145,7 +146,7 @@
   
     <!-- Projects Section -->
     <div id="projects" class="container container-fluid mt-5 pt-5 ">
-      <h1 class="mb-3 pb-3 text-center name-heading"><b>Projects</b></h1>
+      <h1 class="mb-3 pb-3 text-center name-heading" data-aos="fade-in"><b>Projects</b></h1>
       <div class="row">
 
         <div class="col-lg-4 col-12 mb-5">
@@ -201,7 +202,7 @@
       <div class="container text-dark py-5">
         <h4 class="heading" data-aos="fade-right"><b>Contact</b></h4>
         <h2 class="main-heading text-dark" data-aos="fade-left">Keep in touch!</h1>
-        <p class="main-heading" data-aos="fade-left">You can contact me by emailing <a class="text-white" href="mailto:bcjnguyen@gmail.com" target="_blank">bcjnguyen@gmail.com</a> or by filling out the contact form below:
+        <p class="main-heading" data-aos="fade-left">You can contact me by filling out the form below.
         <div onclick="showPopup()" class="fold" data-aos="fade-up-left">Contact Form</div>
         <div class="full-screen hidden flex-container-center">
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSct_-VpU2XxXMNGC_EG3wY3cuxLMcIJARQIj9kPUArSkHDMsg/viewform?embedded=true" width="100%" height="75%" frameborder="0">Loading…</iframe>
@@ -218,7 +219,7 @@
         <div class="row">
           <!--Grid column-->
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <h5 class="main-heading">BNGUYEN.CODES</h5>
+            <i class="fa fa-commenting fa-2x pb-1 text-white" aria-hidden="true"></i>
             
             <p class="text-white">
               Please do not hesitate to contact me. I'm always happy to have discussions and possibly collaborate on projects!
@@ -227,18 +228,18 @@
           <!--Grid column-->
 
           <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="main-heading text">Portfolio</h5>
+          <div class="col-lg-3 col-md-3 mb-4 mb-md-0">
+            <h5 class="text-white font-weight-bold">Portfolio</h5>
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#home" class="text-white font-weight-bold">HOME</a>
+                <a href="#home" class="text-white">Home</a>
               </li>
               <li>
-                <a href="#about" class="text-white font-weight-bold">ABOUT</a>
+                <a href="#about" class="text-white">About</a>
               </li>
               <li>
-                <a href="#projects" class="text-white font-weight-bold">PROJECTS</a>
+                <a href="#projects" class="text-white">Projects</a>
               </li>
             </ul>
           </div>
@@ -246,7 +247,7 @@
         
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <h5 class="main-heading text">Links</h5>
+            <h5 class="text-white font-weight-bold">Links</h5>
 
             <ul class="list-unstyled mb-0">
               <li>
@@ -258,9 +259,9 @@
               <li>
                 <a href="mailto:bcjnguyen@gmail.com" class="text-white" target="_blank">Email</a>
               </li>
-              <li>
+              <!-- <li>
                 <a href="/documents/resume.pdf" class="text-white" target="_blank">Resume</a>
-              </li>
+              </li> -->
             </ul>
           </div>
           <!--Grid column-->
@@ -273,7 +274,7 @@
       <!-- Copyright -->
       <div class="text-white text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
         <h5>
-          Copyright &copy; 2020 | <a class="name-heading text-decoration-none" href="#home">Benjamin Nguyen</a>
+          Copyright &copy; 2020 | <a class="text-white font-weight-bold text-decoration-none" href="#home">Benjamin Nguyen</a>
         </h5>
       </div>
       <!-- Copyright -->
